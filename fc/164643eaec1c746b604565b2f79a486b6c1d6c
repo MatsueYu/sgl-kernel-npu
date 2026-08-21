@@ -1,0 +1,16 @@
+python/sgl_kernel_npu/sgl_kernel_npu/fla/fused_sigmoid_gating_recurrent_decode_optimized.py
+  h_b23a6a8439c0dd 1-284
+python/sgl_kernel_npu/sgl_kernel_npu/activation/fused_sigmoid_mul.py
+  h_b23a6a8439c0dd 1-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "fc164643eaec1c746b604565b2f79a486b6c1d6c",
+  "prompts": {},
+  "humans": {
+    "h_b23a6a8439c0dd": {
+      "author": "unknown"
+    }
+  }
+}
