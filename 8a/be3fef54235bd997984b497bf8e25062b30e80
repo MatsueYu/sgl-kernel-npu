@@ -1,0 +1,31 @@
+python/sgl_kernel_npu/sgl_kernel_npu/fla/fused_sigmoid_gating_recurrent_decode_optimized.py
+  h_54944f723323e4 9,11,16-17,21-22,61-68,72,76,78,82,90,94,100,111,115,120,123,133,138,148,152,154,161,169,171-172,189-200,214,220,226,231,236,238,247,250
+  h_b23a6a8439c0dd 1-8,10,12-15,18-20,23-60,69-71,73-75,77,79-81,83-89,91-93,95-99,101-110,112-114,116-119,121-122,124-132,134-137,139-147,149-151,153,155-160,162-168,170,173-188,201-213,215-219,221-225,227-230,232-235,237,239-246,248-249,251-283
+python/sgl_kernel_npu/sgl_kernel_npu/activation/fused_sigmoid_mul.py
+  s_fa18b865b6980c::t_a9fbcff192a0d8 98-100,103
+  h_b23a6a8439c0dd 1-97,101-102,104-134
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "8abe3fef54235bd997984b497bf8e25062b30e80",
+  "prompts": {},
+  "humans": {
+    "h_54944f723323e4": {
+      "author": "MatsueYu <hmzhu1999@gmail.com>"
+    },
+    "h_b23a6a8439c0dd": {
+      "author": "unknown"
+    }
+  },
+  "sessions": {
+    "s_fa18b865b6980c": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a86f0904fa66635e4406842",
+        "model": "kimi-k2.7-code__dev"
+      },
+      "human_author": "MatsueYu <hmzhu1999@gmail.com>"
+    }
+  }
+}
