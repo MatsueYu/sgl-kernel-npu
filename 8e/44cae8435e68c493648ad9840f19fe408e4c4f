@@ -1,0 +1,25 @@
+python/sgl_kernel_npu/sgl_kernel_npu/activation/fused_sigmoid_mul.py
+  h_b23a6a8439c0dd 1-98,102-103,105-135
+  s_fa18b865b6980c::t_a9fbcff192a0d8 99-101,104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.2",
+  "base_commit_sha": "8e44cae8435e68c493648ad9840f19fe408e4c4f",
+  "prompts": {},
+  "humans": {
+    "h_b23a6a8439c0dd": {
+      "author": "unknown"
+    }
+  },
+  "sessions": {
+    "s_fa18b865b6980c": {
+      "agent_id": {
+        "tool": "trae",
+        "id": "6a86f0904fa66635e4406842",
+        "model": "kimi-k2.7-code__dev"
+      },
+      "human_author": "MatsueYu <hmzhu1999@gmail.com>"
+    }
+  }
+}
