@@ -51,11 +51,6 @@ def _fused_sigmoid_gating_delta_rule_update_decode_kernel(
 ):
     """
     Decode-optimized fused gating + recurrent delta rule update.
-
-    Grid: (num_programs,) where num_programs = min(N*NHV, OVERSUB*num_vectorcore).
-    Each program loops over its assigned (sequence, value-head) tiles with
-    stride num_programs, processing the value dimension in BV=64 blocks and
-    reusing the gating computation across those blocks.
     """
     pid = tl.program_id(0)
     num_programs = tl.num_programs(0)
@@ -208,12 +203,11 @@ def fused_sigmoid_gating_delta_rule_update_decode_npu(
     else:
         assert scale > 0, "scale must be positive"
 
-    # Each program handles exactly one value head to keep the UB working set
-    # small and avoid cross-head synchronization.
+    # Each program handles exactly one value head.
     BHV = 1
     NHV = HV
 
-    o = q.new_empty(N, HV, V)
+    o = q.new_empty(B, T, HV, V)
 
     # 1-D grid sized to the AIV vector core count; num_warps=4 was tuned for
     # small-batch decode. Oversubscription does not help because the loop
